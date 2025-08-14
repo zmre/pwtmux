@@ -7,6 +7,7 @@
 pkgs.tmux.overrideAttrs (oldAttrs: {
   buildInputs = (oldAttrs.buildInputs or []) ++ [pkgs.makeWrapper];
 
+  meta = (oldAttrs.meta or {}) // {mainProgram = "pwtmux";};
   postInstall =
     (oldAttrs.postInstall or "")
     + ''
@@ -14,7 +15,7 @@ pkgs.tmux.overrideAttrs (oldAttrs: {
 
       mv $out/bin/tmux $out/libexec/tmux-unwrapped
 
-      makeWrapper $out/libexec/tmux-unwrapped $out/bin/tmux \
+      makeWrapper $out/libexec/tmux-unwrapped $out/bin/pwtmux \
         --add-flags "-f ${tmux-config}"
     '';
 })
