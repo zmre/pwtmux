@@ -221,11 +221,11 @@
         "pwnvim": "pwnvim"
       },
       "locked": {
-        "lastModified": 1755267714,
-        "narHash": "sha256-dCFrqsw0UzKfPK8ehv5exSathYGXFCaci8mPnOMKAic=",
+        "lastModified": 1755268703,
+        "narHash": "sha256-rL5nn3xZ4RzkaDMiw06Aik9YE8TiY7Op6obb97TfVTM=",
         "owner": "zmre",
         "repo": "pwzsh",
-        "rev": "4644dbca066a4061b59761f3f25d7d362db2bf8b",
+        "rev": "d92058a6dcee7d5ab7ec26b6d0dc6ea79bb6db96",
         "type": "github"
       },
       "original": {
